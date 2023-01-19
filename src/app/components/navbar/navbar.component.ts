@@ -20,10 +20,10 @@ export class NavbarComponent implements OnInit {
 
       if (event instanceof NavigationEnd) {
         // Hide progress spinner or progress bar
-        this.currentRoute = event.url.replace('/', '');
-        console.log(event);
-        console.log(this.currentRoute);
+        // console.log(event);
+        // console.log(this.currentRoute);
 
+        this.currentRoute = event.url.replace('/', '');
         const NavLi = document.querySelectorAll('nav ul li');
         NavLi.forEach((i) => {
           i.classList.remove('active');

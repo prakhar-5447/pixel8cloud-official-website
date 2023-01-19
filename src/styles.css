@@ -43,6 +43,6 @@ li {
   }
   to {
     top: 25px;
-    background-color: black;
+    background-color: var(--secondary);
   }
 }

@@ -3,6 +3,7 @@
 .navbar {
   height: 300px;
   padding: 40px 65px;
+  background: var(--secondary);
 }
 
 .nav-list {
@@ -14,16 +15,16 @@
 }
 
 .nav-list-items > a {
-  color: black;
+  color: white;
 }
 
 .yt-btn {
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 7px 30px;
 }
 
-.nav-list-items:hover > a.yt-btn   {
-  color: white;
+.nav-list-items:hover > a.yt-btn {
+  border-color: black;
   transition: 0.3s ease-in-out;
 }
 
