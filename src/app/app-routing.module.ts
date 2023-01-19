@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { AnnouncementComponent } from './components/announcement/announcement.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -8,25 +12,25 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: NavbarComponent,
+        component: HomeComponent,
       },
       {
         path: 'Home',
-        component: NavbarComponent,
+        component: HomeComponent,
       },
     ],
   },
   {
     path: 'Courses',
-    component: NavbarComponent,
+    component: CoursesComponent,
   },
   {
     path: 'Announcement',
-    component: NavbarComponent,
+    component: AnnouncementComponent,
   },
   {
     path: 'Gallery',
-    component: NavbarComponent,
+    component: GalleryComponent,
   },
 ];
 
