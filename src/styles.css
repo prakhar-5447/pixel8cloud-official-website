@@ -1,6 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter";
+}
+
+:root {
+  --primary: #0018ce;
+  --secondary: #5d70fc;
+  --tertiary: #756a6a;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.active {
+  display: inline-block;
+  position: relative;
+}
+
+.active:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  left: calc(50% - 3px);
+  animation: dot 0.4s forwards ease-in-out;
+}
+
+@keyframes dot {
+  from {
+    top: 40px;
+    background-color: transparent;
+  }
+  to {
+    top: 25px;
+    background-color: black;
+  }
 }
