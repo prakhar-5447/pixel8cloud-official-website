@@ -1,0 +1,74 @@
+@import "../../../styles.css";
+
+.navbar {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.nav-image {
+  height: 60px;
+}
+
+.nav-list {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0;
+}
+
+.nav-list-items > a {
+  color: black;
+}
+
+.yt-btn {
+  border: 1px solid black;
+  padding: 7px 30px;
+}
+
+.nav-list-items:hover > a.yt-btn {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-list-items:hover .yt-btn {
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-btn {
+  display: none;
+  background: transparent;
+  border: none;
+}
+
+.nav-btn :hover {
+  cursor: pointer;
+}
+
+.nav-btn-image {
+  height: 40px;
+}
+
+/* For Desktop View */
+@media (max-width: 1550px) {
+  .navbar {
+    padding: 15px 25px !important;
+  }
+
+  .nav-list {
+    width: 750px;
+  }
+}
+
+/* FOr Tablet View */
+@media (max-width: 1024px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+}
