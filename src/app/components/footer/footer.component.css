@@ -1,0 +1,122 @@
+@import "../../../styles.css";
+
+.footer {
+  background: var(--footer);
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.footer-image {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socials ul {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer-social-icon {
+  height: 40px;
+}
+
+.footer-socials ul li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.footer-socials ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-right {
+  margin-left: 150px;
+  font-size: 50px;
+}
+
+.footer-right h1 {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.footer-right ul {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.footer-right ul li {
+  font-size: 0.5em;
+  font-weight: 100;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+}
+
+.footer-right ul li a {
+  color: black;
+}
+
+.footer-right ul li:not(:first-child) {
+  margin-top: 20px;
+}
+
+/* For Desktop View */
+@media (max-width: 1550px) {
+  .footer-image {
+    width: 350px;
+  }
+
+  .footer-social-icon {
+    height: 35px;
+  }
+
+  .footer-right {
+    margin-left: 130px;
+    font-size: 40px;
+  }
+}
+
+/* For Tablet View */
+@media (max-width: 1024px) {
+  .footer-right {
+    margin-left: 100px;
+  }
+}
+
+/* For Mobile View */
+@media (max-width: 768px) {
+  .footer {
+    display: block;
+    padding: 40px;
+  }
+
+  .footer-image {
+    display: none;
+  }
+
+  .footer-social-icon {
+    height: 30px;
+  }
+
+  .footer-right {
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .footer-right ul {
+    margin-left: 0px;
+  }
+}
