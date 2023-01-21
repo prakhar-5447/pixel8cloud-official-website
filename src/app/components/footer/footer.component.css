@@ -60,10 +60,10 @@
   font-size: 0.5em;
   font-weight: 100;
   letter-spacing: 0.1px;
-  cursor: pointer;
 }
 
 .footer-right ul li a {
+  cursor: pointer;
   color: black;
 }
 
