@@ -1,0 +1,37 @@
+@import "../../../styles.css";
+
+.head {
+  text-align: center;
+  width: 1300px;
+  margin: 0px auto;
+}
+
+h1 {
+  font-size: 82px;
+}
+
+.tag {
+  color: var(--primary);
+}
+
+.tagline {
+  font-size: 30px;
+}
+
+.btn {
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 25px;
+  border: none;
+}
+
+#course {
+  color: white;
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  margin-right: 40px;
+}
+
+#yt {
+  border: 1px solid black;
+}
